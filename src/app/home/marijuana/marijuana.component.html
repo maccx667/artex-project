@@ -1,0 +1,204 @@
+<app-header-one [themeLogo]="themeLogo"></app-header-one>
+
+<!-- Home slider start-->
+<section class="p-0 service_slide">
+  
+  <app-slider
+    [class]="'text-white'"
+    [sliders]="sliders" 
+    [textClass]="'text-center p-center'"
+    [category]="'marijuana'"
+    [buttonClass]="'btn-green'"
+    [buttonText]="'shop now'"
+    > 
+  </app-slider>
+  
+</section>
+<!-- Home slider End -->
+
+<!-- service section start -->
+<section class="banner-padding absolute-banner pb-0 tools-service">
+    <div class="container absolute-bg">
+        <div class="service p-0 ">
+            <app-services></app-services>
+        </div>
+    </div>
+</section>
+<!-- service section end -->
+
+<!-- About section start -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="title3">
+                    <h4>Nosotros</h4>
+                    <h2 class="title-inner3">Bienvenido a Artex</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="about-text">
+                    <p>
+                      ARTEX Fue creado en el año 2004 con el objetivo principal de brindarle servicio a la industria textil, buscando satisfacer las expectativas de producción y calidad de sus productos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About section end -->
+
+<!-- collection banner start-->
+<section class="p-t-0 section-b-space">
+  <div class="container">
+    <div class="row partition2">
+      <div class="col-md-6" *ngFor="let collection of collections">
+        <a [routerLink]="collection.link">
+          <div class="collection-banner text-center p-center">
+            <div class="image-overlay"></div>
+            <img [src]="collection.image" class="img-fluid" alt="collection-banner">
+            <div class="contain-banner">
+              <div>
+                <h4>{{collection.save}}</h4>
+                <h2>{{collection.title}}</h2>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- collection banner End -->
+
+<!-- section start -->
+<section class="section-b-space detail-cannabis bg-grey">
+  <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="detail_section">
+                    <div>
+                        <h4>TÉCNICO-MECÁNICO</h4>
+                        <p>Nuestro  personal técnico siempre  esta  en  constante  capacitación para  brindar  el  mejor  servicio en  menos  tiempo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="detail_section">
+                    <div>
+                        <h4>PROGRAMACIÓN</h4>
+                        <p>Contamos con un área Especializado en  programación  de tus  diseños FULL-FASHION y KNIT AND WEAR  para  tus máquinas  STOLL con el sistema de programación M1 y M1PLUS.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="detail_section">
+                    <div>
+                        <h4>TÉCNICO-ELECTRÓNICO</h4>
+                        <p>Contamos con un área Especializado en:</p>
+                        <p>Diagnostico y reparación de todas las  placas electrónicas.</p>
+                        <p>Actualizamos  el sistema operativo de tu  máquina STOLL.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- section end -->
+
+<!-- product slider start -->
+<div class="title3 section-t-space">
+    <h4>los más comprados</h4>
+    <h2 class="title-inner3">Productos destacados</h2>
+    <div class="line"></div>
+</div>
+<section class="p-t-0 section-b-space tools-grey border-box">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <owl-carousel-o [options]="ProductSliderConfig" class="product-5 product-m no-arrow">
+                    <ng-container *ngFor="let product of products">
+                      <ng-template carouselSlide>
+                        <div class="product-box product-wrap">
+                            <app-product-box-three 
+                              [product]="product" 
+                              [currency]="productService?.Currency">
+                            </app-product-box-three>
+                        </div>
+                      </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- product slider end -->
+
+<!-- parallax product section start -->
+<section class="full-banner parallax tools-parallax-product tools-grey border-box" [ngStyle]="{'background-color': '#F7F7F7'}">
+  <div class="container">
+    <div class="row">
+      <div class="col theme-tab">
+        <div class="title3">
+          <h4>Innovación y confianza</h4>
+          <h2 class="title-inner3">Nuestros productos</h2>
+          <div class="line"></div>
+        </div>
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="tabs tab-title justify-content-center nav nav-pills" >
+          <li *ngFor="let collection of productCollections" [ngbNavItem]="collection">
+            <a ngbNavLink>
+               {{ collection }}
+            </a>
+            <ng-template ngbNavContent>
+              <div class="no-slider row">
+                  <ng-container *ngFor="let product of getCollectionProducts(collection) | slice:0:4">
+                      <div class="product-box">
+                          <app-product-box-three [product]="product" [currency]="productService?.Currency">
+                          </app-product-box-three>
+                      </div>
+                  </ng-container>
+              </div>
+            </ng-template>
+          </li>
+        </ul>
+      <div [ngbNavOutlet]="nav" class="mt-2"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- parallax product section end -->
+
+<!-- blog section start-->
+<!-- <section class="blog pt-0 section-b-space">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="title1 section-t-space">
+          <h4>Recent Story</h4>
+          <h2 class="title-inner1">from the blog</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <app-blog [blogs]="blogs"></app-blog>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- blog section End -->
+
+<!--  logo section start -->
+<section class="section-b-space">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <app-logo [logos]="logos"></app-logo>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  logo section End -->
+
+<!-- <app-age-verification></app-age-verification> -->
+<app-cart-variation [direction]="'right'"></app-cart-variation> <!-- Cart Open To Right Side--> 
+<app-footer-two [class]="'footer-5'" [themeLogo]="themeFooterLogo"></app-footer-two>

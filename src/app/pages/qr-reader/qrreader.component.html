@@ -1,0 +1,6 @@
+<app-breadcrumb [title]="'Scanner'" [breadcrumb]="'Scanner'"></app-breadcrumb>
+<!-- section start-->
+<zxing-scanner
+  (scanSuccess)="handleQrCode($event)">
+</zxing-scanner>
+<!--Section ends-->

@@ -1,0 +1,13 @@
+<owl-carousel-o [options]="LogoSliderConfig" class="no-arrow">
+  <ng-container *ngFor="let logo of logos">
+    <ng-template carouselSlide>
+      <div>
+        <div class="logo-block">
+          <a url="javascript:void(0)" class="w-logo">
+            <img [src]="logo.image" alt="logo">
+          </a>
+        </div>
+      </div>
+    </ng-template>
+  </ng-container>
+</owl-carousel-o>

@@ -1,0 +1,35 @@
+# Cache de Angular y compilación
+/.angular/
+/dist/
+/.nx/
+
+# Dependencias (esta es la más pesada)
+/node_modules/
+
+# Archivos de registro y errores (Logs)
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Variables de entorno y credenciales (Seguridad)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Carpetas de editores de código (Opcional pero recomendado)
+/.vscode/
+/.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Archivos basura del sistema operativo
+.DS_Store
+Thumbs.db

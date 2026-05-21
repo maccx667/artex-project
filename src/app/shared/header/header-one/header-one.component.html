@@ -1,0 +1,60 @@
+<header class="sticky" [ngClass]="class" [class.fixed]="stick && sticky">
+  <div class="mobile-fix-option"></div>
+  <div class="top-header" *ngIf="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="header-contact">
+            <ul>
+              <li>Bienvenido</li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i>Llámanos: +591 68269330</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 text-end">
+          <ul class="header-dropdown">
+            <li class="compare me-3">
+              <a routerLink="/pages/compare/two"><i class="fa fa-random" aria-hidden="true"></i>Comparar</a>
+            </li>
+            <li class="onhover-dropdown mobile-account">
+              <i class="fa fa-user" aria-hidden="true"></i> Usuario
+              <ul class="onhover-show-div">
+                <li>
+                  <a routerLink="/pages/login">
+                    Login
+                  </a>
+                </li>
+                <li>
+                  <a data-lng="es">
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="main-menu">
+          <div class="menu-left">
+            <app-left-menu></app-left-menu>
+            <div class="brand-logo">
+              <a routerLink="/home/fashion" id="headerlogo">
+                <img [src]="themeLogo" class="img-fluid logo-main" alt="logo">
+              </a>
+            </div>
+          </div>
+          <div class="menu-right pull-right">
+            <div>
+              <app-menu></app-menu>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
