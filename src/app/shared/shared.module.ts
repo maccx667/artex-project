@@ -11,10 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
 
 // Header and Footer Components
 import { HeaderOneComponent } from './header/header-one/header-one.component';
-import { FooterOneComponent } from './footer/footer-one/footer-one.component';
 import { FooterTwoComponent } from './footer/footer-two/footer-two.component';
-import { FooterThreeComponent } from './footer/footer-three/footer-three.component';
-import { FooterFourComponent } from './footer/footer-four/footer-four.component';
 
 // Components
 import { LeftMenuComponent } from './components/left-menu/left-menu.component';
@@ -23,7 +20,6 @@ import { CategoriesComponent } from './components/categories/categories.componen
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { ProductBoxOneComponent } from './components/product/product-box-one/product-box-one.component';
 import { ProductBoxThreeComponent } from './components/product/product-box-three/product-box-three.component';
-import { ProductBoxVerticalComponent } from './components/product/product-box-vertical/product-box-vertical.component';
 import { ProductBoxVerticalSliderComponent } from './components/product/product-box-vertical-slider/product-box-vertical-slider.component';
 
 // Skeleton Loader Components
@@ -38,17 +34,13 @@ import { DiscountPipe } from './pipes/discount.pipe';
 @NgModule({
   declarations: [
     HeaderOneComponent,
-    FooterOneComponent,
     FooterTwoComponent,
-    FooterThreeComponent,
-    FooterFourComponent,
     LeftMenuComponent,
     MenuComponent,
     BreadcrumbComponent,
     CategoriesComponent,
     ProductBoxOneComponent,
     ProductBoxThreeComponent,
-    ProductBoxVerticalComponent,
     ProductBoxVerticalSliderComponent,
     SkeletonProductBoxComponent,
     TapToTopComponent,
@@ -77,15 +69,11 @@ import { DiscountPipe } from './pipes/discount.pipe';
     NgxSkeletonLoaderModule,
     TranslateModule,
     HeaderOneComponent,
-    FooterOneComponent,
     FooterTwoComponent,
-    FooterThreeComponent,
-    FooterFourComponent,
     BreadcrumbComponent,
     CategoriesComponent,
     ProductBoxOneComponent,
     ProductBoxThreeComponent,
-    ProductBoxVerticalComponent,
     ProductBoxVerticalSliderComponent,
     SkeletonProductBoxComponent,
     TapToTopComponent,
