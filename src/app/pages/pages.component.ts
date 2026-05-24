@@ -8,6 +8,9 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class PagesComponent implements OnInit {
 
+  public themeLogo: string = 'assets/images/icon/logo-3.png';
+  public themeFooterLogo: string = 'assets/images/icon/logo-3.png';
+
   public url : any; 
 
   constructor(private router: Router) {  

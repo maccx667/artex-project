@@ -496,8 +496,8 @@ del {
         -ms-transition: all 300ms ease;
         -o-transition: all 300ms ease;
         transition: all 300ms ease;
-        background: #fff;
-        box-shadow: 0px 0px 8px #ddd;
+        // background: #fff;
+        // box-shadow: 0px 0px 8px #ddd;
         .top-header {
             display: none;
         }
@@ -1308,9 +1308,6 @@ header {
     }
     .brand-logo {
         display: inline-block;
-        img{
-            height: 50px;
-        }
     }
     .menu-left {
         display: flex;
@@ -4722,6 +4719,7 @@ footer {
     }
     .footer-logo {
         margin-bottom: 18px;
+        img{ max-width: 100%; }
     }
     p {
         line-height: 32px;
@@ -5155,7 +5153,7 @@ ngx-loading-bar {
     ==========================*/
 
 .color1 {
-    background: #ff4c3b;
+    background: #1F448A;
 }
 
 .color2 {
@@ -13736,7 +13734,7 @@ footer {
 ==========================*/
 
 .color1 {
-    background: #ff4c3b;
+    background: #1F448A;
 }
 
 .color2 {

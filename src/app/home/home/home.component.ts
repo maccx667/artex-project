@@ -4,14 +4,14 @@ import { Product } from '../../shared/classes/product';
 import { ProductService } from '../../shared/services/product.service';
 
 @Component({
-  selector: 'app-marijuana',
-  templateUrl: './marijuana.component.html',
-  styleUrls: ['./marijuana.component.scss']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class MarijuanaComponent implements OnInit, OnDestroy {
+export class HomeComponent implements OnInit, OnDestroy {
 
   public themeLogo: string = 'assets/images/icon/logo-3.png';
-  public themeFooterLogo: string = 'assets/images/icon/logo-9.png';
+  public themeFooterLogo: string = 'assets/images/icon/logo-3.png';
 
   public products: Product[] = [];
   public productCollections: any[] = [];

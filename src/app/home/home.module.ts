@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import { HomeRoutingModule } from './home-routing.module';
 
-import { MarijuanaComponent } from './marijuana/marijuana.component';
+import { HomeComponent } from './home/home.component';
 
 // Widgest Components
 import { SliderComponent } from './widgets/slider/slider.component';
@@ -14,7 +14,7 @@ import { BlogComponent } from './widgets/blog/blog.component';
 
 @NgModule({
   declarations: [
-    MarijuanaComponent,
+    HomeComponent,
     // Widgest Components
     SliderComponent,
     BlogComponent,
