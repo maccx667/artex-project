@@ -26,19 +26,12 @@
       </li>
     </ul>
     <div class="cart-info cart-wrap">
-      <a href="javascript:void(0)" title="Add to cart" (click)="CartModal.openModal(product)"
-        *ngIf="cartModal">
-        <i class="ti-shopping-cart"></i>
-      </a>
       <a href="javascript:void(0)" title="Add to cart" (click)="addToCart(product)"
         *ngIf="!cartModal">
         <i class="ti-shopping-cart"></i>
       </a>
       <a href="javascript:void(0)" title="Add to Wishlist" (click)="addToWishlist(product)">
         <i class="ti-heart" aria-hidden="true"></i>
-      </a>
-      <a href="javascript:void(0)" title="Quick View" (click)="QuickView.openModal()">
-        <i class="ti-search" aria-hidden="true"></i>
       </a>
       <a href="javascript:void(0)" title="Compare" (click)="addToCompare(product)">
         <i class="ti-reload" aria-hidden="true"></i>
@@ -65,6 +58,4 @@
   </div>
 </div>
 <app-skeleton-product-box *ngIf="loader"></app-skeleton-product-box>
-<app-quick-view #quickView [product]="product" [currency]="currency"></app-quick-view>
-<app-cart-modal #cartModal [product]="product" [currency]="currency" *ngIf="cartModal"></app-cart-modal>
 

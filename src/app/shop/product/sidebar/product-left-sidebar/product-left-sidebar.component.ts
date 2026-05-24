@@ -3,7 +3,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { ProductDetailsMainSlider, ProductDetailsThumbSlider } from '../../../../shared/data/slider';
 import { Product } from '../../../../shared/classes/product';
 import { ProductService } from '../../../../shared/services/product.service';
-import { SizeModalComponent } from "../../../../shared/components/modal/size-modal/size-modal.component";
 
 @Component({
   selector: 'app-product-left-sidebar',
@@ -18,8 +17,6 @@ export class ProductLeftSidebarComponent implements OnInit {
   public selectedSize: any;
   public mobileSidebar: boolean = false;
   public active = 1;
-
-  @ViewChild("sizeChart") SizeChart: SizeModalComponent;
 
   public ProductDetailsMainSliderConfig: any = ProductDetailsMainSlider;
   public ProductDetailsThumbConfig: any = ProductDetailsThumbSlider;

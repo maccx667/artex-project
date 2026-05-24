@@ -83,12 +83,6 @@
                   </ul>
                   <app-stock-inventory [stock]="product?.stock"></app-stock-inventory>
                   <div class="product-description border-product">
-                    <h6 class="product-title size-text" *ngIf="Size(product.variants).length">
-                        select size
-                        <span>
-                          <a href="javascrip:void(0)" (click)="SizeChart.openModal()">size chart</a>
-                        </span>
-                    </h6>
                     <div class="size-box" *ngIf="Size(product.variants).length">
                       <ul>
                           <li [class.active]="selectedSize == size" 
@@ -137,9 +131,6 @@
                         </button>
                       </form>
                     </div>
-                  </div>
-                  <div class="border-product">
-                    <app-countdown [date]="'Apr 21 2021'"></app-countdown>
                   </div>
                 </div>
               </div>
@@ -216,5 +207,4 @@
   </div>
   <app-related-product [type]="product?.type"></app-related-product>
 </section>
-<app-size-modal #sizeChart [product]="product"></app-size-modal>
 <!-- Section ends -->

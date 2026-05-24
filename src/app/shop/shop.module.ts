@@ -11,7 +11,6 @@ import { ProductLeftSidebarComponent } from './product/sidebar/product-left-side
 
 // Product Details Widgest Components
 import { ServicesComponent } from './product/widgets/services/services.component';
-import { CountdownComponent } from './product/widgets/countdown/countdown.component';
 import { SocialComponent } from './product/widgets/social/social.component';
 import { StockInventoryComponent } from './product/widgets/stock-inventory/stock-inventory.component';
 import { RelatedProductComponent } from './product/widgets/related-product/related-product.component';
@@ -34,7 +33,6 @@ import {RouterModule} from '@angular/router';
   declarations: [
     ProductLeftSidebarComponent, 
     ServicesComponent,
-    CountdownComponent,
     SocialComponent,
     StockInventoryComponent,
     RelatedProductComponent,

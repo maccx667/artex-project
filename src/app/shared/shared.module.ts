@@ -24,18 +24,8 @@ import { CategoriesComponent } from './components/categories/categories.componen
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { ProductBoxOneComponent } from './components/product/product-box-one/product-box-one.component';
 import { ProductBoxThreeComponent } from './components/product/product-box-three/product-box-three.component';
-import { ProductBoxFiveComponent } from './components/product/product-box-five/product-box-five.component';
 import { ProductBoxVerticalComponent } from './components/product/product-box-vertical/product-box-vertical.component';
 import { ProductBoxVerticalSliderComponent } from './components/product/product-box-vertical-slider/product-box-vertical-slider.component';
-
-// Modals Components
-import { NewsletterComponent } from './components/modal/newsletter/newsletter.component';
-import { QuickViewComponent } from './components/modal/quick-view/quick-view.component';
-import { CartModalComponent } from './components/modal/cart-modal/cart-modal.component';
-import { CartVariationComponent } from './components/modal/cart-variation/cart-variation.component';
-import { VideoModalComponent } from './components/modal/video-modal/video-modal.component';
-import { SizeModalComponent } from './components/modal/size-modal/size-modal.component';
-import { AgeVerificationComponent } from './components/modal/age-verification/age-verification.component';
 
 // Skeleton Loader Components
 import { SkeletonProductBoxComponent } from './components/skeleton/skeleton-product-box/skeleton-product-box.component';
@@ -63,16 +53,8 @@ import { DiscountPipe } from './pipes/discount.pipe';
     CategoriesComponent,
     ProductBoxOneComponent,
     ProductBoxThreeComponent,
-    ProductBoxFiveComponent,
     ProductBoxVerticalComponent,
     ProductBoxVerticalSliderComponent,
-    NewsletterComponent,
-    QuickViewComponent,
-    CartModalComponent,
-    CartVariationComponent,
-    VideoModalComponent,
-    SizeModalComponent,
-    AgeVerificationComponent,
     SkeletonProductBoxComponent,
     LayoutBoxComponent,
     TapToTopComponent,
@@ -109,16 +91,8 @@ import { DiscountPipe } from './pipes/discount.pipe';
     CategoriesComponent,
     ProductBoxOneComponent,
     ProductBoxThreeComponent,
-    ProductBoxFiveComponent,
     ProductBoxVerticalComponent,
     ProductBoxVerticalSliderComponent,
-    NewsletterComponent,
-    QuickViewComponent,
-    CartModalComponent,
-    CartVariationComponent,
-    VideoModalComponent,
-    SizeModalComponent,
-    AgeVerificationComponent,
     SkeletonProductBoxComponent,
     LayoutBoxComponent,
     TapToTopComponent,

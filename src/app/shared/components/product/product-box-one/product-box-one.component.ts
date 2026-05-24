@@ -1,6 +1,4 @@
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
-import { QuickViewComponent } from "../../modal/quick-view/quick-view.component";
-import { CartModalComponent } from "../../modal/cart-modal/cart-modal.component";
 import { Product } from "../../../classes/product";
 import { ProductService } from "../../../services/product.service";
 
@@ -17,9 +15,6 @@ export class ProductBoxOneComponent implements OnInit {
   @Input() onHowerChangeImage: boolean = false; // Default False
   @Input() cartModal: boolean = false; // Default False
   @Input() loader: boolean = false;
-  
-  @ViewChild("quickView") QuickView: QuickViewComponent;
-  @ViewChild("cartModal") CartModal: CartModalComponent;
 
   public ImageSrc : string
 
