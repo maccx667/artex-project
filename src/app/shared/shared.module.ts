@@ -19,7 +19,6 @@ import { FooterFourComponent } from './footer/footer-four/footer-four.component'
 // Components
 import { LeftMenuComponent } from './components/left-menu/left-menu.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { SettingsComponent } from './components/settings/settings.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { ProductBoxOneComponent } from './components/product/product-box-one/product-box-one.component';
@@ -29,9 +28,6 @@ import { ProductBoxVerticalSliderComponent } from './components/product/product-
 
 // Skeleton Loader Components
 import { SkeletonProductBoxComponent } from './components/skeleton/skeleton-product-box/skeleton-product-box.component';
-
-// Layout Box
-import { LayoutBoxComponent } from './components/layout-box/layout-box.component';
 
 // Tap To Top
 import { TapToTopComponent } from './components/tap-to-top/tap-to-top.component';
@@ -48,7 +44,6 @@ import { DiscountPipe } from './pipes/discount.pipe';
     FooterFourComponent,
     LeftMenuComponent,
     MenuComponent,
-    SettingsComponent,
     BreadcrumbComponent,
     CategoriesComponent,
     ProductBoxOneComponent,
@@ -56,7 +51,6 @@ import { DiscountPipe } from './pipes/discount.pipe';
     ProductBoxVerticalComponent,
     ProductBoxVerticalSliderComponent,
     SkeletonProductBoxComponent,
-    LayoutBoxComponent,
     TapToTopComponent,
     DiscountPipe
   ],
@@ -94,7 +88,6 @@ import { DiscountPipe } from './pipes/discount.pipe';
     ProductBoxVerticalComponent,
     ProductBoxVerticalSliderComponent,
     SkeletonProductBoxComponent,
-    LayoutBoxComponent,
     TapToTopComponent,
     DiscountPipe
   ]
